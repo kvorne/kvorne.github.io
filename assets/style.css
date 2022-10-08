@@ -1,0 +1,120 @@
+/* Define Colors */
+html {
+    --Navy-color: #253764;
+    --Aqua-color: #00A1E7;
+    --Ice-color:  #DBEEFF;
+    --Base-grey: rgb(30, 30, 30);
+}
+
+/*  Navbar  */
+div.navbar{
+    background-color: var(--Navy-color);
+    height: 60px; 
+    width:100%; 
+    padding: 10px;
+}
+div.navbar ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+div.navbar li {
+    font-family: Futura, sans-serif;
+    font-size: 18px;
+    float: left;
+}
+div.navbar ul li a {
+    display:block;
+    color: var(--Ice-color);
+    padding: 16px 16px;
+    text-decoration: none;
+}
+div.navbar ul li a:hover {
+    color: white
+}
+div.navbar ul li img {
+    width: 30px;
+    display:inline-block;
+    justify-content: center;
+    border-radius: 0;
+}
+
+/*  Body  */
+body {
+    margin:0px; 
+    padding:0px
+}
+#content{
+    margin:40px;
+    font-family: Roboto, Arial, sans-serif; 
+    color: var(--Base-grey); 
+}
+
+/*  Images  */
+img  {
+    border-radius: 15px; 
+    text-align: center; 
+    width: 60%;
+    display:block;
+}
+img.profile{
+    border-radius: 50%;
+    width: 30%;
+}
+
+/*  Headings & Text  */
+h1   {
+    font-family: Futura, sans-serif;
+     color: var(--Navy-color)
+}
+h3   {
+    font-family: Futura, sans-serif; 
+    color: var(--Aqua-color)
+}
+h3 span.subTitle{
+    font-weight:400;
+    color: var(--Navy-color)
+}
+p    {
+    font-size: 16px; 
+    line-height:22px;
+}
+
+/*  Links  */
+a    {
+    color: var(--Aqua-color);
+}
+a div {
+    background-color: var(--Aqua-color); 
+    margin-top: 2px;
+    height: 3px
+}
+
+/* Buttons */
+button{
+    background-color: var(--Aqua-color);
+    color: white;
+    font-family: Futura, sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    border:none;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: var(--Navy-color);
+    color: white;
+    font-family: Futura, sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    border:none;
+}
+
+/* Bullet Lists */
+ul li {
+    color: var(--Aqua-color)
+}
+ul li span{
+    color: var(--Base-grey);
+    font-weight: normal
+}
