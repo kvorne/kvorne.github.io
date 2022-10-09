@@ -4,7 +4,7 @@ html {
     --Aqua-color: #00A1E7;
     --Ice-color:  #DBEEFF;
     --Base-grey: rgb(30, 30, 30);
-    --Heading-Family: Futura, sans-serif;
+    --Heading-Family: Futura PT, sans-serif;
     --Body-Family: Proxima Nova, Roboto, Arial, sans-serif;
 }
 
@@ -22,7 +22,7 @@ div.navbar ul{
     overflow: hidden;
 }
 div.navbar li {
-    font-family: Futura, sans-serif;
+    font-family: var(--Heading-Family);
     font-size: 18px;
     float: left;
 }
@@ -67,11 +67,11 @@ img.profile{
 
 /*  Headings & Text  */
 h1   {
-    font-family: Futura, sans-serif;
+    font-family: var(--Heading-Family);
      color: var(--Navy-color)
 }
 h3   {
-    font-family: Futura, sans-serif; 
+    font-family: var(--Heading-Family); 
     color: var(--Aqua-color)
 }
 h3 span.subTitle{
@@ -97,7 +97,7 @@ a div {
 button{
     background-color: var(--Aqua-color);
     color: white;
-    font-family: Futura, sans-serif;
+    font-family: var(--Heading-Family);
     padding: 10px;
     border-radius: 5px;
     border:none;
@@ -106,7 +106,7 @@ button{
 button:hover{
     background-color: var(--Navy-color);
     color: white;
-    font-family: Futura, sans-serif;
+    font-family: var(--Heading-Family);
     padding: 10px;
     border-radius: 5px;
     border:none;
