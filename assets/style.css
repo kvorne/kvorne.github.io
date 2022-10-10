@@ -69,7 +69,7 @@ body {
 }
 div.card {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
     padding:20px;
     background-color: var(--Ice-color);
     border-radius: 15px;
@@ -119,15 +119,21 @@ h3 span.subTitle{
     font-weight:400;
     color: var(--Navy-color)
 }
+h4   {
+    font-size:18px;
+    font-family: var(--Heading-Family); 
+    color: var(--Navy-color);
+    margin-bottom:10px;
+}
 p    {
     font-size: 16px; 
     line-height:22px;
 }
-
 /*  Links  */
 a    {
     color: var(--Aqua-color);
 }
+
 a div {
     background-color: var(--Aqua-color); 
     margin-top: 2px;
