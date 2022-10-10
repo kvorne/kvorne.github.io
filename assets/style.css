@@ -3,7 +3,7 @@ html {
     --Navy-color: #253764;
     --Aqua-color: #00A1E7;
     --Ice-color:  #DBEEFF;
-    --Base-grey: rgb(30, 30, 30);
+    --Base-grey: rgb(60, 60, 60);
     --Heading-Family: Futura PT, sans-serif;
     --Body-Family: Proxima Nova, Roboto, Arial, sans-serif;
 }
@@ -45,32 +45,69 @@ div.navbar ul li img {
 /*  Body  */
 body {
     margin:0px; 
-    padding:0px
+    padding:0px;
+    align-items: center;
 }
 #content{
-    margin:40px;
+    margin:auto;
+    padding:40px;
+    max-width: 1080px;
     font-family: var(--Body-Family); 
     color: var(--Base-grey); 
+}
+.grid {
+    display: inline-grid;
+    column-gap: 50px;
+}  
+.gridLeft {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+.gridRight {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+div.card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding:20px;
+    background-color: var(--Ice-color);
+    border-radius: 15px;
+}
+div.card img{
+    border-radius: 15px;
+}
+div.card h2{
+    margin-top:0px;
 }
 
 /*  Images  */
 img  {
-    border-radius: 15px; 
     text-align: center; 
-    width: 60%;
+    width: 100%;
     display:block;
 }
 img.profile{
     border-radius: 50%;
-    width: 30%;
+    width: 200px;
 }
 
 /*  Headings & Text  */
 h1   {
     font-family: var(--Heading-Family);
-     color: var(--Navy-color)
+    color: var(--Navy-color);
+    margin-top:0px;
+}
+h2   {
+    font-family: var(--Heading-Family); 
+    color: var(--Aqua-color)
+}
+h2 span.subTitle{
+    font-weight:400;
+    color: var(--Navy-color)
 }
 h3   {
+    font-size:20px;
     font-family: var(--Heading-Family); 
     color: var(--Aqua-color)
 }

@@ -12,17 +12,25 @@
     <div class = "navbar">
         <ul>
             <li><a id="activeTab" href="index.html">Home</a></li>
+            <li><a href = "portfolio.html">Portfolio</a></li>
             <li><a href="experience.html">Experience</a></li>
             <li><a href="projects.html">Projects</a>  </li>
         </ul>
     </div>
     <div id = "content">
-        <img src="assets/headshot.JPG" class="profile"/>
-        <h1>Katarina Vorne</h1>
-        <h3>Anticipated B.S. Computer Science, May 2024</h3>
-        <h3><span class = "subTitle">University of Notre Dame, Notre Dame IN | GPA: 3.91/4.00</span></h5>
-        <p>Let's play a game! Can you guess my favorite animal?</p>
-        <button id="animalBtn" onclick="showSurpriseImg('animalBtn','assets/animage.jpg')">Reveal Answer</button>
+        <div class="grid">
+            <div class="gridLeft">
+                <img src="assets/headshot.JPG" class="profile"/>
+            </div>
+            <div class="gridRight">
+                <h1>Katarina Vorne</h1>
+                <h3>Anticipated B.S. Computer Science, May 2024</h3>
+                <h3><span class = "subTitle">University of Notre Dame, Notre Dame IN | GPA: 3.91/4.00</span></h5>
+                <p>Compassion. Curiosity. Community. These are the qualities that drive my enthusiastic work ethic and passion for problem solving. I put my all into <a href="portfolio.html">my work</a> to contribute to the common good.</p>
+            </div>
+        </div>
+        <!-- <p>Let's play a game! Can you guess my favorite animal?</p>
+        <button id="animalBtn" onclick="showSurpriseImg('animalBtn','assets/animage.jpg')">Reveal Answer</button> -->
     </div>    
     <script defer src="assets/animate.js"></script>
 </body>
