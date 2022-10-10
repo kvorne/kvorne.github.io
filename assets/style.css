@@ -100,7 +100,9 @@ h1   {
 }
 h2   {
     font-family: var(--Heading-Family); 
-    color: var(--Aqua-color)
+    color: var(--Aqua-color);
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 h2 span.subTitle{
     font-weight:400;
