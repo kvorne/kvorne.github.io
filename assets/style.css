@@ -4,7 +4,7 @@ html {
     --Aqua-color: #00A1E7;
     --Ice-color:  #DBEEFF;
     --Base-grey: rgb(60, 60, 60);
-    --Heading-Family: "futura", sans-serif;
+    --Heading-Family: "futura-pt", sans-serif;
     --Body-Family: Proxima Nova, Roboto, Arial, sans-serif;
 }
 
@@ -138,6 +138,7 @@ h1   {
     font-family: var(--Heading-Family);
     color: var(--Navy-color);
     margin-top:0px;
+    font-weight:700;
 }
 h2   {
     font-family: var(--Heading-Family); 
@@ -146,18 +147,20 @@ h2   {
     padding-bottom: 0px;
     margin-top: 0px;
     margin-bottom:0px;
+    font-weight:700;
 }
 h2 span.subTitle{
-    font-weight:400;
+    font-weight:500;
     color: var(--Navy-color)
 }
 h3   {
     font-size:20px;
     font-family: var(--Heading-Family); 
-    color: var(--Aqua-color)
+    color: var(--Aqua-color);
+    font-weight: 700;
 }
 h3 span.subTitle{
-    font-weight:400;
+    font-weight:500;
     color: var(--Navy-color)
 }
 h4   {
