@@ -9,24 +9,24 @@ html {
 }
 
 /*  Navbar  */
-div.navbar{
+div#navbar{
     background-color: var(--Navy-color);
     height: 60px; 
-    width:100%; 
-    padding: 10px;
+    padding:10px;
+    width:100% - 20px; 
 }
-div.navbar ul{
+div#navbar ul{
     list-style-type: none;
     margin:0;
     padding:0;
     overflow: hidden;
 }
-div.navbar li {
+div#navbar li {
     font-family: var(--Heading-Family);
     font-size: 18px;
     float: left;
 }
-div.navbar ul li a {
+div#navbar ul li a {
     display:block;
     color: var(--Ice-color);
     padding: 16px 16px;
@@ -35,13 +35,37 @@ div.navbar ul li a {
 div.navbar ul li a:hover {
     color: white
 }
-div.navbar ul li img {
+div#navbar ul li img {
     width: 30px;
     display:inline-block;
     justify-content: center;
     border-radius: 0;
 }
 
+@media  (min-width: 0px) and (max-width: 599px){
+    div#navbar svg{
+        display: inline-block;
+    }
+    div#navbar ul{
+        display: none;
+    }
+}
+@media  (min-width: 600px){
+    div#navbar svg{
+        display: none;
+    }
+    div#navbar ul{
+        display: inline-block;
+    }
+}
+
+div#navbar svg{
+    width:25px;
+    fill: var(--Ice-color);
+    padding: 16px;
+}:hover{
+    fill: white;
+}
 /*  Body  */
 body {
     margin:0px; 
@@ -55,6 +79,27 @@ body {
     font-family: var(--Body-Family); 
     color: var(--Base-grey); 
 }
+
+/*  Grid  */
+@media  (min-width: 0px) and (max-width: 819px){
+    .grid{
+        display: block;
+    }
+    .gridRight{
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+}
+
+@media  (min-width: 820px){
+    .grid{
+        display: inline-grid;
+    }
+    .gridRight {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+}
 .grid {
     display: inline-grid;
     column-gap: 50px;
@@ -62,10 +107,6 @@ body {
 .gridLeft {
     grid-column-start: 1;
     grid-column-end: 1;
-}
-.gridRight {
-    grid-column-start: 2;
-    grid-column-end: 3;
 }
 div.card {
     margin-top: 20px;

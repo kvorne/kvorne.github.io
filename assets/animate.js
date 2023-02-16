@@ -28,3 +28,8 @@ function showSurpriseImg(className, ...imgList){
         while (images.length > 0) images[0].remove();
     }
 }
+
+function showMenu (){
+    var navBar = document.getElementByID("navBar");
+
+}
