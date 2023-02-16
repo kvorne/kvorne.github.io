@@ -9,11 +9,17 @@ html {
 }
 
 /*  Navbar  */
+header{
+    border-bottom: 1px solid var(--Base-grey);
+}
+
 div#navbar{
     background-color: var(--Navy-color);
     height: 60px; 
     padding:10px;
-    width:100% - 20px; 
+    width:100% - 20px;
+    display: flex;
+    align-items: center;
 }
 div#navbar ul{
     list-style-type: none;
@@ -32,7 +38,7 @@ div#navbar ul li a {
     padding: 16px 16px;
     text-decoration: none;
 }
-div.navbar ul li a:hover {
+div#navbar ul li a:hover {
     color: white
 }
 div#navbar ul li img {
@@ -42,30 +48,71 @@ div#navbar ul li img {
     border-radius: 0;
 }
 
-@media  (min-width: 0px) and (max-width: 599px){
-    div#navbar svg{
-        display: inline-block;
-    }
-    div#navbar ul{
-        display: none;
-    }
-}
-@media  (min-width: 600px){
-    div#navbar svg{
-        display: none;
-    }
-    div#navbar ul{
-        display: inline-block;
-    }
+.hamburgerMenu {
+    display: none;
+    margin: 16px;
+}:hover .bar{
+    background-color: white;
+}:not(:hover) .bar{
+    background-color: var(--Ice-color);
 }
 
-div#navbar svg{
-    width:25px;
-    fill: var(--Ice-color);
-    padding: 16px;
-}:hover{
-    fill: white;
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    background-color: var(--Ice-color);
 }
+
+.navList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Navy-color);
+    border-radius: 0px;
+}
+
+@media (max-width: 599px) {
+    .navList {
+        position: fixed;
+        left: -100%;
+        top: 3rem;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 0px 0px 10px 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+        padding-bottom: 200px;
+    }
+
+    .navList.active {
+        left: 0;
+    }
+
+    .hamburgerMenu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburgerMenu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburgerMenu.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburgerMenu.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
 /*  Body  */
 body {
     margin:0px; 

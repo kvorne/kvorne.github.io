@@ -3,6 +3,14 @@ let underline = document.createElement("div");
 let tab = document.getElementById("activeTab");
 tab.appendChild(underline);
 
+const borger = document.querySelector(".hamburgerMenu");
+const navList = document.querySelector(".navList");
+const navLink = document.querySelectorAll(".navLink");
+
+
+borger.addEventListener("click", showMenu);
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
 function showSurpriseImg(className, ...imgList){
     // get button element by the passed id 
     var button = document.getElementById(className);
@@ -30,6 +38,12 @@ function showSurpriseImg(className, ...imgList){
 }
 
 function showMenu (){
-    var navBar = document.getElementByID("navBar");
+    borger.classList.toggle("active");
+    navList.classList.toggle("active");
 
+}
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
 }
