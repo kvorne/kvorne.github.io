@@ -4,6 +4,7 @@ let tab = document.getElementById("activeTab");
 tab.appendChild(underline);
 
 const borger = document.querySelector(".hamburgerMenu");
+const navBar = document.getElementById("navbar");
 const navList = document.querySelector(".navList");
 const navLink = document.querySelectorAll(".navLink");
 
@@ -46,4 +47,18 @@ function showMenu (){
 function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
+}
+
+window.onscroll = function() {navStick()};
+
+// Check for vertical offset (should be 0)
+var sticky = navBar.getBoundingClientRect().top;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function navStick() {
+  if (window.pageYOffset >= sticky) {
+    navBar.classList.add("sticky");
+  } else {
+    navBar.classList.remove("sticky");
+  }
 }
