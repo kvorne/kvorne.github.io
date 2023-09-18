@@ -305,6 +305,8 @@ nav .gridLeft {
 
 .secondary-navbar-item .animated-icon-container{
     margin:0px 0px 10px 0px;
+    /*TEMP*/
+    display: none;
 }
 
 #email {
@@ -680,7 +682,12 @@ img.profile{
 
 svg{
     fill: var(--Primary);
-    width: 24px;
+    stroke: var(--Primary);
+    width: 1.3rem;
+}
+
+.soft{
+    border-radius: 10px;
 }
 
 .animated-icon-container{
@@ -698,6 +705,10 @@ svg{
     transition: all .3s ease
 }
 .secondary-navbar-item:hover .animated-icon{
+    width: 60px;
+    cursor: pointer;
+}
+.animated-icon:hover{
     width: 60px;
     cursor: pointer;
 }

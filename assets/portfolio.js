@@ -8,7 +8,8 @@ var sticky = secondaryNav.getBoundingClientRect().top;
 
 function scrollFunction() {
     if (this.oldScroll < this.scrollY && (document.body.scrollTop > sticky || document.documentElement.scrollTop > 20)) {
-        document.getElementById("secondary-navbar").style.top = "0px";
+        /* TO DO */
+        document.getElementById("secondary-navbar").style.top = "71px";
     } else {
         // document.getElementById("secondary-navbar").style.top = "81px";
     }
