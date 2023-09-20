@@ -8,8 +8,7 @@ var sticky = secondaryNav.getBoundingClientRect().top;
 
 function scrollFunction() {
     if (this.oldScroll < this.scrollY && (document.body.scrollTop > sticky || document.documentElement.scrollTop > 20)) {
-        /* TO DO */
-        document.getElementById("secondary-navbar").style.top = "71px";
+        document.getElementById("secondary-navbar").style.top = "0px";
     } else {
         // document.getElementById("secondary-navbar").style.top = "81px";
     }
@@ -121,8 +120,10 @@ let deliver = bodymovin.loadAnimation({
         renderer: 'svg',
         loop: true,
         autoplay: false,
+        lazy: false,
         path: (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "./assets/dark-deliver.json" : "./assets/deliver.json")
 });
+
 
 deliverNavItem.addEventListener('mouseenter', (e) => {
     deliver.setDirection(directionMenu);

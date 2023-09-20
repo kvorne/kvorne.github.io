@@ -54,7 +54,7 @@ html {
     /* Font */
     --Heading-Family: "freight-sans-pro", sans-serif;
     --Body-Family: "proxima-nova", "Roboto", Arial, sans-serif;
-    font-size: 24px;
+    font-size: 22px;
 
     /* Margins and Padding */
     --Outer-Padding: 120px;
@@ -231,6 +231,8 @@ nav .gridLeft {
     display:flex;
     align-items: center;
     margin-right: calc(2 * var(--Outer-Padding) / 3);
+    line-height: normal;
+    margin-top: auto;
 }
 #navbar ul li a {
     display:block;
@@ -305,8 +307,6 @@ nav .gridLeft {
 
 .secondary-navbar-item .animated-icon-container{
     margin:0px 0px 10px 0px;
-    /*TEMP*/
-    display: none;
 }
 
 #email {
@@ -499,7 +499,8 @@ nav .gridLeft {
     margin-right: 15px;
     fill: var(--Primary);
     stroke: var(--Primary);
-    width: 1.3rem;
+    width: 1rem;
+    padding-top: 1rem;
 }
 .TextCardTitle h4 {
     color: var(--Primary);
@@ -508,13 +509,16 @@ nav .gridLeft {
 .flex-row{
     display: flex;
     flex-direction:row;
-    gap: var(--Outer-Padding)
+    gap: var(--Outer-Padding);
   }
 .sixty{
     width: 60%;
 }
 .forty{
     width: 40%;
+}
+.fifty{
+    width:50%;
 }
 .quickLinks{
     margin-top: 0px;
@@ -537,6 +541,9 @@ nav .gridLeft {
     }
     .forty p{
         text-align: center;
+    }
+    .fifty{
+        width:100%;
     }
     .blue .flex-row, .purple .flex-row{
         flex-direction: column-reverse !important;
@@ -710,6 +717,24 @@ img.profile{
     cursor: pointer;
 }
 
+figure img{
+    max-height: 50vh;
+    max-width: 100%;
+    width: fit-content;
+}
+
+figure {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: table;
+    /* width: 100%; */
+}
+
+figure .flex-row{
+    column-gap: var(--Gutter);
+    width: calc( 100% - var(--Gutter));
+}
+
 /***************************************************************************************
 *
 *   || HEADINGS AND TEXT
@@ -769,7 +794,7 @@ h2   {
 
 h3   {
     font-family: var(--Heading-Family); 
-    font-size:2rem;
+    font-size:1.8rem;
     margin: 0px;
     margin-top: 2rem;
     color: var(--Heading);
@@ -821,12 +846,28 @@ h6   {
     font-size: 1.2rem; 
     font-family: var(--Body-Family);
     line-height: 130%;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     margin-bottom: 0px;
     color: var(--Primary);
     font-weight: 700;
 }
+.flex-row h6 {
+    margin-top: 0rem;
+}
 
+figcaption p{
+    font-size: .8rem;
+    color: var(--Heading);
+}
+
+figcaption {
+    display: table-caption;
+    caption-side: bottom
+}
+.TextCardTitle h4{
+    font-size: 1rem;
+    padding-top: 1rem;
+}
 p    {
     font-size: 1rem; 
     font-family: var(--Body-Family);
@@ -882,11 +923,13 @@ ul{
 }
 
 ul li {
-    color: var(--Donpen)
+    color: var(--Donpen);
+    line-height: 1.2rem;
+    margin-top: .5rem;
 }
 ul li span{
     color: var(--Body);
-    font-weight: normal
+    font-weight: normal;
 }
 
 
