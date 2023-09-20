@@ -685,6 +685,18 @@ img  {
     height: 100%;
     /* object-fit: cover; */
 }
+
+.long-image {
+    width: 60%;
+}
+
+@media  (min-width: 0px) and (max-width: 1100px){
+    .long-image {
+        width: 100%;
+    }
+}
+
+
 img.profile{
     width: 100%;
     border-radius: 10px;

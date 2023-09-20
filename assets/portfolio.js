@@ -124,7 +124,6 @@ let deliver = bodymovin.loadAnimation({
         path: (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "./assets/dark-deliver.json" : "./assets/deliver.json")
 });
 
-
 deliverNavItem.addEventListener('mouseenter', (e) => {
     deliver.setDirection(directionMenu);
     deliver.play();
