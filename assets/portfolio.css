@@ -390,16 +390,17 @@ nav .gridLeft {
 
     .navList.active {
         align-items: center;
-        top: 61px;
+        top: 71px;
         padding-bottom: 20px;
         z-index: 2;
         background-color: var(--Page-Bg);
     }
-    .navItem:first-child{
-        margin-top: 100px;
+    
+    .activeItem {
+        margin-top: 10px !important;
     }
-    .navItem{
-        margin-top: 10px;
+    .activeItem:first-child{
+        margin-top: 100px !important;
     }
 
     #navbar ul li a{
@@ -769,6 +770,7 @@ h2   {
     margin-bottom: 20px;
     font-weight:700;
     font-size: 2.8rem;
+    line-height: 100%;
 }
 
 .project-title{

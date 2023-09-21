@@ -1,6 +1,7 @@
 const borger = document.querySelector(".hamburgerMenu");
 const navBar = document.getElementById("navbar");
 const navList = document.querySelector(".navList");
+const navItem = document.querySelectorAll(".navItem");
 const navLink = document.querySelectorAll(".navLink");
 
 
@@ -10,6 +11,7 @@ navLink.forEach(n => n.addEventListener("click", closeMenu));
 function showMenu (){
     borger.classList.toggle("active");
     navList.classList.toggle("active");
+    navItem.forEach(n => n.classList.toggle("activeItem"));
 }
 
 function closeMenu() {
