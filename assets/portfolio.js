@@ -52,6 +52,7 @@ let discover = bodymovin.loadAnimation({
         path: (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "./assets/dark-discover.json" : "./assets/research.json")
 });
 
+discover.setDirection(-directionMenu);
 
 discoverNavItem.addEventListener('mouseenter', (e) => {
     discover.setDirection(directionMenu);
