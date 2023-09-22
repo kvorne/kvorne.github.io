@@ -48,15 +48,16 @@ let discover = bodymovin.loadAnimation({
         container: discoverContainer,
         renderer: 'svg',
         loop: true,
-        autoplay: false,
-        path: (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "./assets/dark-discover.json" : "./assets/research.json")
+        autoplay: true,
+        path: (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "./assets/dark-discover.json" : "./assets/discover.json"),
+        initialSegment: [0, 1]
 });
 
-discover.setDirection(-directionMenu);
+// discover.playSegments([1,1]);
 
 discoverNavItem.addEventListener('mouseenter', (e) => {
     discover.setDirection(directionMenu);
-    discover.play();
+    discover.playSegments([1,49]);
 
 });
 
@@ -120,14 +121,14 @@ let deliver = bodymovin.loadAnimation({
         container: deliverContainer,
         renderer: 'svg',
         loop: true,
-        autoplay: false,
-        lazy: false,
-        path: (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "./assets/dark-deliver.json" : "./assets/deliver.json")
+        autoplay: true,
+        path: (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "./assets/dark-deliver.json" : "./assets/deliver.json"),
+        initialSegment: [0, 1]
 });
 
 deliverNavItem.addEventListener('mouseenter', (e) => {
     deliver.setDirection(directionMenu);
-    deliver.play();
+    deliver.playSegments([0,49]);
 
 });
 

@@ -1004,8 +1004,8 @@ button:hover{
     border-radius: 10px;
     stroke: 2px var(--Action);
     outline: 2px solid var(--Action);
-    width: 62px;
-    height: 62px;
+    width: 60px;
+    height: 60px;
     transition: all .3s ease;
 }
 
