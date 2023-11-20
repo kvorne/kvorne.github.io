@@ -510,7 +510,7 @@ nav .gridLeft {
 .flex-row{
     display: flex;
     flex-direction:row;
-    gap: var(--Outer-Padding);
+    gap: var(--Gutter);
   }
 .sixty{
     width: 60%;
