@@ -170,10 +170,55 @@
 
             <h2 class="gradient-title" id="design">Design</h2>
             <h3>Creating the Magic</h3>
+            <h6>Audio-Reactive Visuals</h6>
+            <p>Because of the way that the visuals in Catalog were so intertwined with the audio Whitney composed, I decided to make the interactive component of my project a reaction to inputted audio files. I used Whitney's original audio as the demo file to test the interaction in its original context.</p>
+            <p>I broke down the challenge of designing audio-reactive visuals by first completing a tutorial, then tailoring the reaction to fit Whitney's composition.</p>
+            <div class="center"><figure>
+                <img src="assets/audio-interpolation.png" alt="diagram showing network of audio visuals." class="soft"/>
+                <figcaption>
+                    <p>Network interpolating and adjusting audio.</p>
+                </figcaption>
+            </figure></div>
+            <div class="center"><figure>
+                <img src="assets/Audio-visuals.png" alt="diagram showing network of audio visuals." class="soft"/>
+                <figcaption>
+                    <p>Network of audio-generated visuals.</p>
+                </figcaption>
+            </figure></div>
+            <div class="center flex-row">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VTauXnAQr1A?si=tv8NNHCas4gDBAix" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <h6>Circle of Circles</h6>
+            <p>Designing the circle of circles was a challenge, but I learned a lot about both different ways to design shapes and instancing from the experience.</p>
+            <p>My first attempt to create the circle of circles was to instance circles at points in the outline of other circles. This was a perfect solution in isolation, however it did not scale to the scope of the full project, because it is very difficult to create instances of instances in Touch Designer.</p>
+            <div class="center"><figure>
+                <img src="assets/instanced-circle-of-circles.png" alt="instanced circle of circles." class="soft"/>
+                <figcaption>
+                    <p>Network of circle of circles created using instancing.</p>
+                </figcaption>
+            </figure></div>
+            <p>Nik helped me come up with a solution that used merging rather than instancing. This helped me realize that there are different ways to get similar outputs in Touch Designer, and you should look to the future of how elements fit into the larger project to choose which method is best.</p>
+            <div class="center"><figure>
+                <img src="assets/merge.png" alt="merged circle of circles." class="soft"/>
+                <figcaption>
+                    <p>Network of circle of circles created using merging.</p>
+                </figcaption>
+            </figure></div>
+            <p>Both outputted a circle of circles, but the merged solution fit better into the overall project.</p>
+
+            <h6>Random Waves of Circles</h6>
+            <p>I used random noise to create waves of circles of different colors.</p>
+            <div class="center"><figure>
+                <img src="assets/noise.png" alt="merged circle of circles." class="soft"/>
+                <figcaption>
+                    <p>Network of noise used to create instances of circles of circles.</p>
+                </figcaption>
+            </figure></div>
+
 
             <h2 class="gradient-title" id="deliver">Deliver</h2>
             <h3>An Audio-Reactive Recreation</h3>
-            <p>The final ouput of this immersive experience is an Audio-Reactive animation, in which users can input their favorite audio and watch it react the way that John Whitney's animation would have done. As a demo song, I entered the original audio that he composed for Catalog.</p>
+            <p>These pieces came together to create a final ouput of this immersive experience is an Audio-Reactive animation, in which users can input their favorite audio and watch it react the way that John Whitney's animation would have done. As a demo song, I entered the original audio that he composed for Catalog.</p>
             <div class="center flex-row">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/3Rwk7c8Iia4?si=yBvC1ikRMSczAY5O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
@@ -182,9 +227,9 @@
             <h2 class="gradient-title" id="takeaways">Takeaways</h2>
             <h3>Lessons Learned</h3>
             <h6>Audio Files are Important.</h6>
-            <p>This </p>
+            <p>A core component of this project was using Whitney's original composition, and that was not something I was willing to compromise on. This made it extremely difficult to interpolate the composition, because it was not availible as a MIDI audio file. That meant that I had to spend a lot of time playing around with different audio operators to get a result that followed the flow of Whitney's composition.</p>
             <h6>Recreate the experience, not the piece.</h6>
-            <p></p>
+            <p>Trying to recreate the exact piece that Whitney designed would have taken away it's interactive experience and not made the most of the tools Touch Designer had to offer. I learned that even with my best efforts, I could not recreate Whitney's piece exactly, and once I began to focus on recreating the experience with respect to the original piece, I ended with a better result than I could have imagined.</p>
             <h6>Break Things Down.</h6>
             <p>I truly believed multiple times throughout this project that it was impossible to recreate Whitney's work. Once I broke down the project into steps and took on one challenge at a time, it became manageable. I started by learning audio-reactive visuals, then Instancing, then Noise generative instancing, then finally fine-tuned audio interpolation. I was also able to find better learning resources by breaking down the challenges into smaller and less specific elements.</p>
             <h3>Tools Practiced</h3>
