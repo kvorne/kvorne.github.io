@@ -14,9 +14,9 @@
         header {
         padding: 0px;
         position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        /* display: flex; */
+        /* justify-content: center;
+        align-items: center; */
         height: 100%;
         width: 100%;
         transform-style: preserve-3d;
@@ -24,8 +24,10 @@
         }
 
         .background {
-            transform: translateZ(-10px) scale(2);
+            transform: translateZ(-10px) scale(1.5);
             position: absolute;
+            top:-200px;
+            right:-200px;
         }
 
         .foreground {
@@ -37,7 +39,7 @@
         position: absolute;
         height: auto;
         width: 60%;
-        object-fit: cover;
+        /* object-fit: cover; */
         z-index: -1;
         }
 

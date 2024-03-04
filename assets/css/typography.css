@@ -48,7 +48,7 @@ h2   {
     margin-top: 7rem;
 }
 .gradient-title:first-child{
-    margin-top: 0px;
+    margin-top: var(--Outer-Padding);
 }
 
 h3   {
