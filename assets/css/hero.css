@@ -1,0 +1,28 @@
+.Banner{
+    position: fixed;
+    min-height: 65vh;
+    height: fit-content;
+    opacity: 100%;
+    padding-top: calc( var(--Outer-Padding) + 75px) !important;
+    width: 100%;
+}
+
+.Banner h1 {
+    margin-top: 0px;
+    margin-bottom: var(--Gutter);
+    line-height: 100%;
+    color: var(--Heading);
+}
+.Banner p, .Banner h5, .Banner a {
+    color: var(--Body);
+    max-width: 600px;
+    /* margin-bottom: var(--Outer-Padding); */
+}
+
+.hero{
+    top:-210px;
+    position: absolute;
+    right:0;
+    width: 50%;
+    height: auto;
+}

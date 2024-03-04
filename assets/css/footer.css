@@ -1,0 +1,54 @@
+
+.Footer{
+    background-color: var(--Page-Bg);
+    height: fit-content;
+    opacity: 100%;
+    padding-top: calc( var(--Outer-Padding) / 2);
+    padding-bottom: calc( var(--Outer-Padding) / 2);
+    background-size: 4000% 4000% !important;
+    -webkit-animation: Animation 40s ease infinite;
+    -moz-animation: Animation 40s ease infinite;
+    animation: Animation 40s ease infinite;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid var(--Accent)!important;
+}
+.Footer h3, .Footer p, .Footer p a{
+    color: var(--Body);
+}
+
+.Footer p{
+    font-size: .8rem;
+    line-height: 1.2rem;
+}
+
+.Footer .forty {
+    align-items: end;
+    text-align: right;
+}
+
+.Footer .flex-row{
+    display: flex;
+    flex-direction:row;
+    gap: var(--Outer-Padding);
+  }
+
+@media  (min-width: 0px) and (max-width: 660px){
+    .Footer .sixty{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Footer .forty{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    } 
+    .Footer .flex-row{
+        padding: var(--Gutter) 0px;
+        display: flex;
+        flex-direction:column;
+        gap: .5rem;
+      }
+}  

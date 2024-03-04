@@ -1,0 +1,223 @@
+.Banner-Buffer{
+    min-height: 85vh;
+    height: fit-content;
+}
+.VertDivider{
+    margin-top: 50px !important;
+}
+.learnMoreMargin{
+    margin-top: var(--Gutter) !important;
+    margin-bottom: var(--Gutter) !important;
+}
+.content{
+    font-family: var(--Body-Family);
+    position:relative; 
+    color: var(--Body);
+    background-color: var(--Page-Bg);
+    padding: var(--Outer-Padding) 0px; 
+    display:flex;
+    justify-content: center;
+    min-height: 65vh;
+    align-items: center;
+}
+.doublePadding{
+    padding-top: calc(90px + var(--Outer-Padding));
+    padding-bottom: calc(90px + var(--Outer-Padding));
+}
+.centerSection{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.section{
+    max-width: 1500px;
+    width:calc(100% - 2 * var(--Outer-Padding));
+    height: 100%;
+    margin-left: var(--Outer-Padding);
+    margin-right:var(--Outer-Padding);
+    position: relative;
+}
+.text-section{
+    max-width: 850px !important;
+}
+.desktopExtraMargin{
+    max-width: 1240px;
+    width:calc(100% - 2 * var(--Outer-Padding));
+    height: 100%;
+    margin-left: var(--Outer-Padding);
+    margin-right:var(--Outer-Padding);
+}
+.center{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    align-items: center;
+}
+.left{
+    display:flex;
+    justify-content: left;
+    width:fit-content;
+}
+.vertCenter{
+    display:flex;
+    align-items: center;
+    width:100%;
+    height: 100%;
+}
+.TextCard{
+    padding: calc( 2 * var(--Gutter) / 3) var(--Gutter);
+    width: calc( 100% - 2 * var(--Gutter));
+    border-radius: 10px;
+}
+.TextCardTitle{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.TextCardTitle svg{
+    margin-right: 15px;
+    fill: var(--Primary);
+    stroke: var(--Primary);
+    width: 1rem;
+    padding-top: 1rem;
+}
+.TextCardTitle h4 {
+    color: var(--Primary);
+    margin: 0px;
+}
+.flex-row{
+    display: flex;
+    flex-direction:row;
+    gap: var(--Outer-Padding);
+  }
+.sixty{
+    width: 60%;
+}
+.forty{
+    width: 40%;
+}
+.thirty{
+    width: 30%;
+}
+.fifty{
+    width:50%;
+}
+.quickLinks{
+    margin-top: 0px;
+    
+}
+@media  (min-width: 0px) and (max-width: 1100px){
+    .flex-row{
+        display: flex;
+        flex-direction:column;
+      }
+    .sixty{
+        width: 100%;
+    }
+    .forty{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    .fifty{
+        width:100%;
+    }
+    .blue .flex-row, .purple .flex-row{
+        flex-direction: column-reverse !important;
+    }
+    .reverse-flex{
+        flex-direction: column-reverse !important;
+    }
+    .desktopExtraMargin{
+        margin-left: 0px;
+        margin-right: 0px;
+        width:100%;
+    }
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+@media  (min-width: 0px) and (max-width: 1110px){
+    .grid{
+        display: block;
+        column-gap: 0px;
+    }
+    .content .gridRight{
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    .gridFive{
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    .gridThree{
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+}
+
+.grid{
+    column-gap: 0px;
+}
+
+.gridRight {
+        grid-column-start: 2;
+        grid-column-end: 4;
+}
+.grid {
+    display: inline-grid;
+    width:100%;
+}  
+.gridLeft {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    display:grid;
+}
+.gridFive{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.gridThree{
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+
+.noMobile{
+    display: block;
+}
+
+@media  (min-width: 370px) and (max-width: 1300px){
+    .noMobile{
+        display: none;
+        width: 0;
+    }
+    .Banner .forty{
+        width: 100%;
+    }
+    .Banner .sixty{
+        width: 45%;
+    }
+    .Banner-Buffer{
+        min-height: 55vh;
+    }
+}
+@media  (min-width: 0px) and (max-width: 360px){
+    .noMobile{
+        display: none;
+        width: 0;
+    }
+    .Banner .forty{
+        width: 100%;
+    }
+    .Banner .sixty{
+        width: 45%;
+    }
+    .Banner-Buffer{
+        min-height: 80vh;
+    }
+}

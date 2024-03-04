@@ -1,0 +1,32 @@
+/* Dark */
+@media (prefers-color-scheme: dark) {
+    .Zurn-Elkay-Primary-Background{
+        background-color: #60BBD8;
+    }
+    .Hocus-Focus-Primary-Background{
+        background-color: #8B7FB1;
+    }
+    .Vorne-Primary-Background{
+        background-color: #6B97DE;
+    }
+    .Solemates-Primary-Background{
+        background-color: #FF9BC7;
+    }
+}
+    
+
+/* Light */
+@media (prefers-color-scheme: light) {
+    .Zurn-Elkay-Primary-Background{
+        background-color: #165C7D;
+    }
+    .Hocus-Focus-Primary-Background{
+        background-color: #5F508B;
+    }
+    .Vorne-Primary-Background{
+        background-color: #4170BC;
+    }
+    .Solemates-Primary-Background{
+        background-color: #C55586;
+    }
+}

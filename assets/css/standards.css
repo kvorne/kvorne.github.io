@@ -1,0 +1,82 @@
+html {
+
+    /* Colors */
+    --KK-Slider: #FFFFFF;
+    --Totoro: #dfdfdf;
+    --Shadow: #888888;
+    --Eeyore: #292929;
+    --Sootsprite: #121212;
+    
+    /* Font */
+    --Heading-Family: "freight-sans-pro", sans-serif;
+    --Body-Family: "proxima-nova", "Roboto", Arial, sans-serif;
+    font-size: 22px;
+
+    /* Margins and Padding */
+    --Outer-Padding: 5.5rem;
+    --Gutter: 2rem;
+    
+    /* Breakpoints */
+    --A-Fine-Boi: 370px;
+    --He-Chonk: 576px;
+    --A-Heckin-Chonker: 768px;
+    --Hefty-Chonk: 992px;
+    --Megachonker: 1200px;
+    --OH-LAWD-HE-COMIN: 1400px;
+  
+    /* Scrolling */
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+
+}
+
+body {
+    margin:0px; 
+    padding:0px;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    align-items: center;
+    background-color: var(--Page-Bg);
+}
+
+@media  (min-width: 0px) and (max-width: 600px){
+    html{
+        font-size: 18px;
+        --Outer-Padding: 1.6rem;
+        --Gutter: 1rem;
+    }
+}
+@media  (min-width: 601px) and (max-width: 1100px){
+    html{
+        font-size: 20px;
+        --Outer-Padding: 3.75rem;
+        --Gutter: 1rem;
+    }
+}
+
+
+/* Dark */
+@media (prefers-color-scheme: dark) {
+    html {
+        --Heading: var(--KK-Slider);
+        --Body: var(--Totoro);
+        --Header: #121212DD;
+        --Page-Bg: var(--Sootsprite);
+        --Accent: var(--Eeyore);
+        --Primary: var(--KK-Slider);
+    }
+}
+    
+
+/* Light */
+@media (prefers-color-scheme: light) {
+    html {
+        --Heading: var(--Sootsprite);
+        --Body: var(--Eeyore);
+        --Header: #FFFFFFDD;
+        --Page-Bg: var(--KK-Slider);
+        --Accent: var(--Totoro);
+        --Primary: var(--Sootsprite);
+    }
+}

@@ -3,7 +3,9 @@ const navBar = document.getElementById("navbar");
 const navList = document.querySelector(".navList");
 const navItem = document.querySelectorAll(".navItem");
 const navLink = document.querySelectorAll(".navLink");
+const icon = document.getElementById("icon");
 
+icon.src = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "favicon-dark.png" : "favicon.png")
 
 borger.addEventListener("click", showMenu);
 navLink.forEach(n => n.addEventListener("click", closeMenu));
@@ -29,7 +31,7 @@ let linkedin = bodymovin.loadAnimation({
         renderer: 'svg',
         loop: true,
         autoplay: false,
-        path: "/assets/animated-icons/linkedin.json"
+        path: (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "./assets/animated-icons/dark-linkedin.json" : "./assets/animated-icons/linkedin.json"),
 });
 
 var directionMenu = 1;
@@ -52,7 +54,7 @@ let email = bodymovin.loadAnimation({
         renderer: 'svg',
         loop: true,
         autoplay: false,
-        path: "/assets/animated-icons/email.json"
+        path: (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "./assets/animated-icons/dark-email.json" : "./assets/animated-icons/email.json"),
 });
 
 var directionMenu = 1;
@@ -76,7 +78,7 @@ let github = bodymovin.loadAnimation({
         renderer: 'svg',
         loop: true,
         autoplay: false,
-        path: "/assets/animated-icons/github.json",
+        path: (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "./assets/animated-icons/dark-github.json" : "./assets/animated-icons/github.json"),
 });
 
 githubContainer.addEventListener('mouseenter', (e) => {
@@ -91,14 +93,29 @@ githubContainer.addEventListener('mouseleave', (e) => {
 });
 
 
-// window.onscroll = function() {navStick()};
 
-// // Check for vertical offset (should be 0)
-// var sticky = navBar.getBoundingClientRect().top;
+/* Fade Animation */
+const faders = document.querySelectorAll('.fade-in-section')
 
-// // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-// function navStick() {
-//   if (window.scrollY >= sticky) {
-//     navBar.classList.add("sticky");
-//   }
-// }
+const appearOptions = {
+    threshold: 0
+};
+
+const appearOnScroll = new IntersectionObserver(function(
+    entries,
+    appearOnScroll
+){
+    entries.forEach(entry =>{
+        if (!entry.isIntersecting){
+            return;
+        } else {
+            entry.target.classList.add('is-visible');
+            appearOnScroll.unobserve(entry.target);
+        }
+    })
+},
+appearOptions);
+
+faders.forEach( fader => {
+    appearOnScroll.observe(fader);
+});

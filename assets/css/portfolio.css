@@ -900,6 +900,7 @@ p    {
     margin-top: 5px;
     color: var(--Body);
     font-weight: 400;
+    max-width: 800px;
 }
 /* .section p{
     max-width: 900px;
