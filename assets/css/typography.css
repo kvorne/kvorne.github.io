@@ -129,7 +129,7 @@ p    {
 /* Conditional Formatting */
 
 .text-center{
-    text-align: center;
+    text-align: center !important;
 }
 
 .Caption{
