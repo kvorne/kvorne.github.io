@@ -194,7 +194,7 @@ header .section{
     display: block;
 }
 
-@media  (min-width: 376px) and (max-width: 1300px){
+@media  (min-width: 370px) and (max-width: 1300px){
     .noMobile{
         display: none;
         width: 0;
@@ -209,7 +209,7 @@ header .section{
         min-height: 55vh;
     }
 }
-@media  (min-width: 0px) and (max-width: 375px){
+@media  (min-width: 0px) and (max-width: 369px){
     .noMobile{
         display: none;
         width: 0;
@@ -220,6 +220,8 @@ header .section{
     .Banner .sixty{
         width: 45%;
     }
+}
+@media  (min-height: 0px) and (max-height: 700px){
     .Banner-Buffer{
         min-height: 80vh;
     }
