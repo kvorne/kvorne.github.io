@@ -54,7 +54,7 @@
         flex-direction:column-reverse !important;
         gap: .5rem;
       }
-    .Footer .p{
+    .Footer p{
         text-align: left;
         width: 100%;
     }
