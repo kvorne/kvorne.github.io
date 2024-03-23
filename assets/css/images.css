@@ -68,3 +68,7 @@ figure .flex-row{
     column-gap: var(--Gutter);
     width: calc( 100% - var(--Gutter));
 }
+
+header path {
+    fill: var(--Primary);
+}
