@@ -24,11 +24,11 @@ a    {
 button{
     background-color: var(--Primary);
     color: var(--Page-Bg);
-    font-family: var(--Heading-Family);
-    font-weight: 500;
+    font-family: var(--Body-Family);
+    font-weight: 350;
     text-transform: uppercase;
     letter-spacing: .05rem;
-    padding: 10px 25px;
+    padding: 15px 25px;
     border-radius: 100px;
     border:none;
     margin-top: 10px;

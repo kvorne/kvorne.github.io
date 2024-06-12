@@ -17,8 +17,10 @@
     padding: var(--Outer-Padding) 0px; 
     display:flex;
     justify-content: center;
-    min-height: 65vh;
     align-items: center;
+}
+.content:nth-of-type(even){
+    background-color: var(--Accent);
 }
 .doublePadding{
     padding-top: calc(90px + var(--Outer-Padding));
@@ -125,9 +127,6 @@ header .section{
     }
     .fifty{
         width:100%;
-    }
-    .blue .flex-row, .purple .flex-row{
-        flex-direction: column-reverse !important;
     }
     .reverse-flex{
         flex-direction: column-reverse !important;

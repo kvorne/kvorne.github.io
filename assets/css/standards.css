@@ -2,14 +2,15 @@ html {
 
     /* Colors */
     --KK-Slider: #FFFFFF;
-    --Totoro: #dfdfdf;
+    --Totoro: #F7F7F8;
     --Shadow: #888888;
     --Eeyore: #292929;
     --Sootsprite: #121212;
     
     /* Font */
-    --Heading-Family: "freight-sans-pro", sans-serif;
-    --Body-Family: "proxima-nova", "Roboto", Arial, sans-serif;
+    /* --Heading-Family: "freight-sans-pro", sans-serif;
+    --Body-Family: "proxima-nova", "Roboto", Arial, sans-serif; */
+    font-family: "Lexend", Arial, sans-serif;
     font-size: 22px;
 
     /* Margins and Padding */

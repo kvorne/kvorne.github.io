@@ -1,8 +1,8 @@
 
 img  {
     width: 100%;
-    height: 100%;
-    /* object-fit: cover; */
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
 }
 
 .long-image {
@@ -54,19 +54,19 @@ img.profile{
 
 figure img{
     max-width: 100%;
-    width: fit-content;
+    margin-bottom: .5rem;
+    width:calc( 100% - var(--Gutter));
 }
 
 figure {
     margin-top: 2rem;
     margin-bottom: 2rem;
     display: table;
-    /* width: 100%; */
+    width: calc( 100% -  var(--Gutter) );
 }
 
 figure .flex-row{
     column-gap: var(--Gutter);
-    width: calc( 100% - var(--Gutter));
 }
 
 header path {
