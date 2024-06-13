@@ -39,7 +39,7 @@ h3   {
 }
 
 .project-title{
-    font-size: 40px;
+    font-size: 2rem;
     font-weight:350;
     line-height: 54px;
     color: var(--Heading);
