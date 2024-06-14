@@ -49,13 +49,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:120px 0px;
+    padding: calc(1.5 * var(--Outer-Padding) ) 0px;
     transform-style: preserve-3d;
     z-index: -1;
 }
 
 .background {
-    transform: translateZ(-10px) scale(2);
+    transform: translateZ(-8px) scale(2);
 }
 
 .foreground {
@@ -68,7 +68,6 @@ header {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    top: -120px;
     z-index: -1;
 }
 

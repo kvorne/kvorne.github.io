@@ -42,11 +42,11 @@ nav .gridLeft {
 }
 #navbar li {
     font-family: var(--Heading-Family);
-    font-size: 1.1rem;
+    font-size: 1rem;
     float: left;
     display:flex;
     align-items: center;
-    line-height: normal;
+    line-height: 100%;
     margin-top: -3px;
 }
 .navLink{

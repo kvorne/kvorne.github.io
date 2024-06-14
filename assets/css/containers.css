@@ -19,7 +19,7 @@
     justify-content: center;
     align-items: center;
 }
-.content:nth-of-type(even){
+.wrapper .content:nth-of-type(even){
     background-color: var(--Accent);
 }
 .doublePadding{

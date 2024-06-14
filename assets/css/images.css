@@ -13,6 +13,10 @@ img  {
     .long-image {
         width: 100%;
     }
+    figure {
+        margin: 2rem 0rem !important;
+        width: calc( 100% -  2*var(--Gutter) ) !important;
+    }
 }
 
 
@@ -55,14 +59,13 @@ img.profile{
 figure img{
     max-width: 100%;
     margin-bottom: .5rem;
-    width:calc( 100% - var(--Gutter));
+    width:100%;
 }
 
 figure {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: 2rem var(--Gutter);
     display: table;
-    width: calc( 100% -  var(--Gutter) );
+    width: calc( 100% -  2*var(--Gutter) );
 }
 
 figure .flex-row{
@@ -71,4 +74,8 @@ figure .flex-row{
 
 header path {
     fill: var(--Primary);
+}
+
+svg{
+    height:1rem;
 }
