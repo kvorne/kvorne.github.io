@@ -11,7 +11,7 @@ html {
     /* --Heading-Family: "freight-sans-pro", sans-serif;
     --Body-Family: "proxima-nova", "Roboto", Arial, sans-serif; */
     font-family: "Lexend", Arial, sans-serif;
-    font-size: 22px;
+    font-size: 20px;
 
     /* Margins and Padding */
     --Outer-Padding: 5.5rem;
@@ -44,14 +44,14 @@ body {
 
 @media  (min-width: 0px) and (max-width: 600px){
     html{
-        font-size: 18px;
+        font-size: 16px;
         --Outer-Padding: 1.6rem;
         --Gutter: 1rem;
     }
 }
 @media  (min-width: 601px) and (max-width: 1100px){
     html{
-        font-size: 20px;
+        font-size: 18px;
         --Outer-Padding: 3.75rem;
         --Gutter: 1rem;
     }
