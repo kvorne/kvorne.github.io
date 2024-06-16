@@ -31,19 +31,20 @@
     <link rel="stylesheet" href="https://use.typekit.net/dqm1nyq.css">
 </head>
 <body>
-    <nav id = "navbar" class="portfolio"> <div class="centerSection"><div class="section">
-        <!-- <div class="center"> -->
+    <nav id = "navbar"> <div class="centerSection"><div class="section">
         <div class="grid">
             <div class = "gridLeft">
                 <ul class="logo">
-                    <a href="/"><li><img alt="website logo of initials KV" src="assets/logo.png"/></li></a>
+                    <a aria-label="home" href="/"><li><img alt="KV" id="icon" src="assets/logo.png"/></li></a>
                 </ul>
-                <ul class="navList">
-                    <li class="navItem"><a class="navLink selected" href="/">Portfolio</a></li>
-                    <li class="navItem"><a class="navLink" target="_blank" href ="assets/VorneResume.pdf">Resume</a></li>
-                </ul>
+                <a aria-label="home" href="/"><li class = "navLink">Katarina Vorne</li></a>
             </div>
             <div class = 'gridRight'>
+                <ul class="navList">
+                    <li class="navItem"><a aria-label="Portfolio" class="navLink selected" href="/">Portfolio</a></li>
+                    <li class="navItem"><a aria-label="About" class="navLink" href="/about">About</a></li>
+                    <li class="navItem"><a aria-label="Resume" class="navLink" target="_blank" href ="assets/VorneResume.pdf">Resume</a></li>
+                </ul>
                 <div class="hamburgerMenu">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -51,7 +52,6 @@
                 </div>
             </div>
         </div>
-        <!-- </div> -->
         </div></div>
     </nav>
     <div class="Banner">

@@ -68,6 +68,11 @@ figure {
     width: calc( 100% -  2*var(--Gutter) );
 }
 
+.flex-row figure{
+    width: 100%;
+    margin: 0;
+}
+
 figure .flex-row{
     column-gap: var(--Gutter);
 }

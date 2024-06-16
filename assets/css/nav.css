@@ -28,12 +28,12 @@ nav .gridLeft {
     right:0;
     z-index: 2;
     align-items: center;
-    border-bottom: 1px solid var(--Accent);
+    border-bottom: 1px solid var(--Shadow);
 }
 #navbar.portfolio{
     background-color: var(--Page-Bg) !important;
     opacity: 100% !important;
-    border-bottom: 1px solid var(--Accent)!important;
+    border-bottom: 1px solid var(--Shadow)!important;
 }
 #navbar ul{
     list-style-type: none;
@@ -95,7 +95,7 @@ nav .gridLeft {
     transition: top 0.3s;
     z-index: 1;
     margin-top: 0px;
-    border-bottom: 1px solid var(--Accent);
+    border-bottom: 1px solid var(--Shadow);
 }
 
 #secondary-navbar a {

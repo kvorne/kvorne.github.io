@@ -12,7 +12,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    border-top: 1px solid var(--Accent)!important;
+    border-top: 1px solid var(--Shadow)!important;
 }
 .Footer h3, .Footer p, .Footer p a{
     color: var(--Body);
