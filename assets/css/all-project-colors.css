@@ -29,6 +29,9 @@
     .Solemates-Primary-Background{
         background-color: #C35686;
     }
+    .Nuts-For-Reading-Primary-Background{
+        background-color: #EB7100;
+    }
     .Zurn-Elkay-Primary-Color{
         color: #165C7D;
     }
@@ -40,5 +43,8 @@
     }
     .Solemates-Primary-Color{
         color: #C35686;
+    }
+    .Nuts-For-Reading-Primary-Color{
+        color: #F07300;
     }
 }

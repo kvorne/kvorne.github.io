@@ -160,6 +160,12 @@ header .section{
         grid-column-start: 1;
         grid-column-end: 1;
     }
+    .flex-row{
+        gap: 0;
+      }
+    .content{
+        padding: calc( 2 * var(--Outer-Padding)) 0rem;
+    }
 }
 
 .grid{
