@@ -198,11 +198,17 @@ header .section{
 .noMobile{
     display: block;
 }
+.noDesktop{
+    display: none;
+}
 
 @media  (min-width: 370px) and (max-width: 1300px){
     .noMobile{
         display: none;
         width: 0;
+    }
+    .noDesktop{
+        display: block;
     }
     .Banner .forty{
         width: 100%;
@@ -218,6 +224,9 @@ header .section{
     .noMobile{
         display: none;
         width: 0;
+    }
+    .noDesktop{
+        display: block;
     }
     .Banner .forty{
         width: 100%;

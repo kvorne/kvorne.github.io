@@ -145,6 +145,10 @@ p    {
     color: var(--Body);
     font-weight: 350;
 }
+b{
+    font-weight: 600;
+}
+
 
 /* Conditional Formatting */
 
@@ -165,8 +169,9 @@ ul{
 
 ul li {
     color: var(--Primary);
-    line-height: 100%;
-    margin-top: .5rem;
+    line-height: 120%;
+    margin-top: 1rem;
+    font-weight: 500;
 }
 ul li span{
     color: var(--Body);
@@ -179,8 +184,9 @@ ol{
 
 ol li {
     color: var(--Primary);
-    line-height: 100%;
-    margin-top: .5rem;
+    line-height: 120%;
+    margin-top: 1rem;
+    font-weight: 500;
 }
 ol li span{
     color: var(--Body);
@@ -190,9 +196,9 @@ ol li span{
 
 .quote{
     max-width:850px;
-    text-align: center;
     position: relative;
     padding: 20px 0px;
+    margin-bottom: 2rem;
 }
 .quote .author{
     font-size: .8rem;
@@ -202,13 +208,13 @@ ol li span{
 .quote p{
     margin: 0rem 0rem .2rem 0rem;
     color: var(--Primary);
+    font-weight: 450;
 }
 .quote::before,
 .quote::after {
     content: "";
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0%;
     width: 120px; /* Width of the bars */
     height: 1px; /* Height of the bars */
     background-color: var(--Body) /* Color of the bars */
