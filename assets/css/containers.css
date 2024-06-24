@@ -76,8 +76,7 @@ header .section{
 }
 .TextCardTitle{
     display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+    align-items: baseline;
 }
 .TextCardTitle svg{
     margin-right: 15px;
@@ -89,6 +88,7 @@ header .section{
 .TextCardTitle h4 {
     color: var(--Primary);
     margin: 0px;
+    margin-bottom: .5rem;
 }
 .flex-row{
     display: flex;
@@ -115,6 +115,7 @@ header .section{
     .flex-row{
         display: flex;
         flex-direction:column;
+        gap:0px;
       }
     .sixty{
         width: 100%;
@@ -160,9 +161,6 @@ header .section{
         grid-column-start: 1;
         grid-column-end: 1;
     }
-    .flex-row{
-        gap: 0;
-      }
     .content{
         padding: calc( 2 * var(--Outer-Padding)) 0rem;
     }

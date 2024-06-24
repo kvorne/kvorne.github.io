@@ -1,5 +1,8 @@
+@font-face{
+    font-family: Lexend; 
+    src: url('../lexend/Lexend-VariableFont_wght.ttf')
+}
 html {
-
     /* Colors */
     --KK-Slider: #FFFFFF;
     --Totoro: #F7F7F8;

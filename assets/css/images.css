@@ -10,7 +10,7 @@ img  {
 }
 
 .max-500{
-    max-height: 500px;
+    max-height: 600px;
     width: 100%;
     object-fit: cover;
 }

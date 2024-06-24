@@ -13,7 +13,6 @@ h1  {
 }
 .wrapper h1{
     font-weight: 450;
-    margin-top: 3rem;
 }
 h1 span{
     font-size: 1.3rem;
@@ -82,15 +81,15 @@ h3   {
 
 h4   {
     font-family: var(--Heading-Family); 
-    font-size:1.8rem;
+    font-size:1.4rem;
     margin: 0px;
     margin-top: 2rem;
-    color: var(--Heading);
+    color: var(--Body);
     font-weight:600;
 }
 
 h5  {
-    font-size:1.3rem;
+    font-size:1.2rem;
     margin-top: 2rem;
     margin-bottom: 0;
     font-family: var(--Heading-Family); 

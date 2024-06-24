@@ -21,6 +21,7 @@
 .Footer p{
     font-size: .8rem;
     line-height: 160%;
+    margin-bottom: 0;
 }
 
 .Footer .forty {

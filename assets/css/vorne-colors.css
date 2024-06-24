@@ -1,13 +1,13 @@
 @media (prefers-color-scheme: dark) {
     html{
         --Primary: #A5C8E4 !important;
-        --Secondary: #072333;
+        --Secondary: #075391;
     }
 }
 
 @media (prefers-color-scheme: light) {
     html{
-        --Primary: #165C7D !important;
-        --Secondary: #E3F4FB;
+        --Primary: #1070C0 !important;
+        --Secondary: #F0F5FA;
     }
 }
