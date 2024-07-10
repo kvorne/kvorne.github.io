@@ -143,6 +143,7 @@ function init() {
     var $headingInner = $(".line-inner");
 
     splitTextTimeline.staggerTo($headingInner, 0.7, { y:0,  force3D:true, ease: "customEase"}, 0.1);
+    split.revert();
     splitTextTimeline.play();
 }
 
