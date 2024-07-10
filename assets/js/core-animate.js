@@ -148,6 +148,7 @@ function init() {
 
 document.addEventListener("DOMContentLoaded", (event) => {
     document.fonts.ready.then(() => {
+        init();
         splitTextTimeline.play();
     });
 });
@@ -163,5 +164,3 @@ function debounce(func){
 window.addEventListener("resize",debounce(function(e){
     splitTextTimeline.revert()
 }));
-
-init();
