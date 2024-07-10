@@ -122,10 +122,8 @@ faders.forEach( fader => {
 
 
 /* h1 animation By Adam Robinson from Codepen: https://codepen.io/adamrobinson/pen/BZWwdR */
-document.addEventListener("DOMContentLoaded", (event) => {
-    document.fonts.ready.then(() => {
-
-        gsap.registerPlugin(SplitText) 
+function init() {
+    gsap.registerPlugin(SplitText) 
         var $heading = $("h1");
         var splitTextTimeline = new TimelineLite({paused: true});
 
@@ -150,7 +148,25 @@ document.addEventListener("DOMContentLoaded", (event) => {
         var $headingInner = $(".line-inner");
 
         splitTextTimeline.staggerTo($headingInner, 0.7, { y:0,  force3D:true, ease: "customEase"}, 0.1);
+        splitTextTimeline.play();
+}
 
+document.addEventListener("DOMContentLoaded", (event) => {
+    document.fonts.ready.then(() => {
         splitTextTimeline.play();
     });
 });
+
+function debounce(func){
+    var timer;
+    return function(event){
+      if(timer) clearTimeout(timer);
+      timer = setTimeout(func,300,event);
+    };
+}
+
+window.addEventListener("resize",debounce(function(e){
+    split.revert()
+}));
+
+init();
