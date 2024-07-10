@@ -5,6 +5,11 @@ const navItem = document.querySelectorAll(".navItem");
 const navLink = document.querySelectorAll(".navLink");
 const icon = document.getElementById("icon");
 
+document.onreadystatechange = function() {
+    if (document.readyState === 'complete') 
+        $(document).trigger('fontfaceapplied');
+};
+
 icon.src = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "favicon-dark.png" : "favicon.png")
 
 borger.addEventListener("click", showMenu);
@@ -122,7 +127,7 @@ faders.forEach( fader => {
 
 
 /* h1 animation By Adam Robinson from Codepen: https://codepen.io/adamrobinson/pen/BZWwdR */
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", (fontfaceapplied) => {
 
     gsap.registerPlugin(SplitText) 
     var $heading = $("h1");
