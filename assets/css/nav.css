@@ -58,7 +58,6 @@ nav .gridLeft {
     font-weight: 350 !important;
     display: block;
     width:100%;
-    transition: all .3s ease;
 }
 .gridLeft .navLink{
     margin-left: calc(var(--Outer-Padding) / 3);;
@@ -108,7 +107,6 @@ nav .gridLeft {
     text-decoration: none;
     font-weight: 500;
     font-size: .8rem;
-    transition: all .3s ease;
     margin-right: calc(var(--Outer-Padding) / 2);
     margin-top: 10px;
     margin-bottom: 10px;

@@ -5,10 +5,6 @@
     opacity: 100%;
     padding-top: calc( var(--Outer-Padding) / 2);
     padding-bottom: calc( var(--Outer-Padding) / 2);
-    background-size: 4000% 4000% !important;
-    -webkit-animation: Animation 40s ease infinite;
-    -moz-animation: Animation 40s ease infinite;
-    animation: Animation 40s ease infinite;
     position: relative;
     display: flex;
     justify-content: center;
