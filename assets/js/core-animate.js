@@ -122,33 +122,35 @@ faders.forEach( fader => {
 
 
 /* h1 animation By Adam Robinson from Codepen: https://codepen.io/adamrobinson/pen/BZWwdR */
-document.fonts.ready.then(() => {
+document.addEventListener("DOMContentLoaded", (event) => {
+    document.fonts.ready.then(() => {
 
-    gsap.registerPlugin(SplitText) 
-    var $heading = $("h1");
-    var splitTextTimeline = new TimelineLite({paused: true});
+        gsap.registerPlugin(SplitText) 
+        var $heading = $("h1");
+        var splitTextTimeline = new TimelineLite({paused: true});
 
-    var split = new SplitText($heading, {
-        type: "lines", 
-        linesClass: "line", 
-        position: "relative",
-        onComplete:allDone
+        var split = new SplitText($heading, {
+            type: "lines", 
+            linesClass: "line", 
+            position: "relative",
+            onComplete:allDone
+        });
+
+        function allDone() {
+            $heading.revert()
+        }
+
+        /*
+        * Create a custom ease https://greensock.com/ease-visualizer
+        */
+        CustomEase.create("customEase", "M0,0 C0.2,0 0.337,0.566 0.47,0.772 0.615,0.998 0.822,1 1,1");
+
+        $('.line').wrapInner("<div class='line-inner'></div>")
+
+        var $headingInner = $(".line-inner");
+
+        splitTextTimeline.staggerTo($headingInner, 0.7, { y:0,  force3D:true, ease: "customEase"}, 0.1);
+
+        splitTextTimeline.play();
     });
-
-    function allDone() {
-        $heading.revert()
-    }
-
-    /*
-    * Create a custom ease https://greensock.com/ease-visualizer
-    */
-    CustomEase.create("customEase", "M0,0 C0.2,0 0.337,0.566 0.47,0.772 0.615,0.998 0.822,1 1,1");
-
-    $('.line').wrapInner("<div class='line-inner'></div>")
-
-    var $headingInner = $(".line-inner");
-
-    splitTextTimeline.staggerTo($headingInner, 0.7, { y:0,  force3D:true, ease: "customEase"}, 0.1);
-
-    splitTextTimeline.play();
 });
