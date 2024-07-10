@@ -149,7 +149,6 @@ function init() {
 document.addEventListener("DOMContentLoaded", (event) => {
     document.fonts.ready.then(() => {
         init();
-        splitTextTimeline.play();
     });
 });
 
