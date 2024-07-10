@@ -147,8 +147,12 @@ function init() {
 }
 
 document.addEventListener("DOMContentLoaded", (event) => {
+    window.addEventListener("resize",debounce(function(e){
+        splitTextTimeline.revert()
+    }));
     const customFont = new FontFaceObserver('Lexend');
     customFont.load().then(() => {
+
         init();
     });
 });
@@ -161,6 +165,3 @@ function debounce(func){
     };
 }
 
-window.addEventListener("resize",debounce(function(e){
-    splitTextTimeline.revert()
-}));

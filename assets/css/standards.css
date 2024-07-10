@@ -13,7 +13,7 @@ html {
     /* Font */
     /* --Heading-Family: "freight-sans-pro", sans-serif;
     --Body-Family: "proxima-nova", "Roboto", Arial, sans-serif; */
-    font-family: "Lexend";
+    font-family: "Lexend", Arial, sans-serif;
     font-size: 20px;
 
     /* Margins and Padding */
