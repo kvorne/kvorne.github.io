@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         });
 
         function allDone() {
-            $heading.revert()
+            split.revert()
         }
 
         /*
