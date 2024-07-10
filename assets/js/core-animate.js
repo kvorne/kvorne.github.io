@@ -127,7 +127,7 @@ faders.forEach( fader => {
 
 
 /* h1 animation By Adam Robinson from Codepen: https://codepen.io/adamrobinson/pen/BZWwdR */
-document.addEventListener("DOMContentLoaded", (fontfaceapplied) => {
+document.fonts.ready.then(() => {
 
     gsap.registerPlugin(SplitText) 
     var $heading = $("h1");
