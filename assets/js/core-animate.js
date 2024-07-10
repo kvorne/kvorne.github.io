@@ -147,7 +147,8 @@ function init() {
 }
 
 document.addEventListener("DOMContentLoaded", (event) => {
-    document.fonts.ready.then(() => {
+    const customFont = new FontFaceObserver('Lexend');
+    customFont.load().then(() => {
         init();
     });
 });
