@@ -5,11 +5,6 @@ const navItem = document.querySelectorAll(".navItem");
 const navLink = document.querySelectorAll(".navLink");
 const icon = document.getElementById("icon");
 
-document.onreadystatechange = function() {
-    if (document.readyState === 'complete') 
-        $(document).trigger('fontfaceapplied');
-};
-
 icon.src = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "favicon-dark.png" : "favicon.png")
 
 borger.addEventListener("click", showMenu);
@@ -137,7 +132,12 @@ document.fonts.ready.then(() => {
         type: "lines", 
         linesClass: "line", 
         position: "relative",
+        onComplete:allDone
     });
+
+    function allDone() {
+        $heading.revert()
+    }
 
     /*
     * Create a custom ease https://greensock.com/ease-visualizer
