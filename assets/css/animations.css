@@ -70,8 +70,12 @@ section {
 /* For h1 Animation by Adam Robinson from Codepen: https://codepen.io/adamrobinson/pen/BZWwdR */
 .line {
 	overflow:hidden;
+    margin:0;
+    padding:0;
 }
 
 .line-inner {
 	transform: translateY(100%);
+    margin:0;
+    padding:0;
 }

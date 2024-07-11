@@ -143,20 +143,9 @@ function init() {
     var $headingInner = $(".line-inner");
 
     splitTextTimeline.staggerTo($headingInner, 0.7, { y:0,  force3D:true, ease: "customEase"}, 0.1);
-    split.revert();
+    // split.revert();
     splitTextTimeline.play();
 }
-
-document.addEventListener("DOMContentLoaded", (event) => {
-    window.addEventListener("resize",debounce(function(e){
-        splitTextTimeline.revert()
-    }));
-    const customFont = new FontFaceObserver('Lexend');
-    customFont.load().then(() => {
-
-        init();
-    });
-});
 
 function debounce(func){
     var timer;
@@ -165,4 +154,35 @@ function debounce(func){
       timer = setTimeout(func,300,event);
     };
 }
+
+// window.addEventListener("resize",debounce(function(e){
+//     splitTextTimeline.revert()
+// }));
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    const $heading = document.querySelector("h1");
+    const largeScreenContent = "<span>I’m Katarina, a UX Designer </span><br/>Crafting Intentional Experiences Informed by User Research, Empathy, and Technical Expertise.";
+    const smallScreenContent = "I’m Katarina, a UX Designer Crafting Intentional Experiences Informed by User Research, Empathy, and Technical Expertise.";
+
+    function updateHeadingContent() {
+        if (window.innerWidth > 768) {
+            $heading.innerHTML = largeScreenContent;
+        } else {
+            $heading.innerHTML = smallScreenContent;
+        }
+    }
+
+    updateHeadingContent(); // Initial update
+
+    window.addEventListener("resize", debounce(function(e) {
+        updateHeadingContent();
+    }));
+
+    const customFont = new FontFaceObserver('Lexend');
+    customFont.load().then(() => {
+        init();
+    });
+});
+
+
 
