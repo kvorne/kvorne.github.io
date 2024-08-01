@@ -95,6 +95,9 @@ header .section{
     flex-direction:row;
     gap: var(--Outer-Padding);
   }
+.seventy{
+    width: 70%;
+}
 .sixty{
     width: 60%;
 }
@@ -115,9 +118,15 @@ header .section{
     .flex-row{
         display: flex;
         flex-direction:column;
-        gap:0px;
+        gap:1rem;
       }
     .sixty{
+        width: 100%;
+    }
+    .seventy{
+        width: 100%;
+    }
+    .thirty{
         width: 100%;
     }
     .forty{

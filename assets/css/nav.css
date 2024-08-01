@@ -19,7 +19,7 @@ nav .gridLeft {
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     height: 35px; 
-    padding:10px 0px;
+    padding:1rem 0px;
     width:100%-20px;
     display: flex;
     position:fixed;
@@ -28,7 +28,7 @@ nav .gridLeft {
     right:0;
     z-index: 2;
     align-items: center;
-    border-bottom: 1px solid var(--Shadow);
+    /* border-bottom: 1px solid var(--Shadow); */
 }
 #navbar.portfolio{
     background-color: var(--Page-Bg) !important;

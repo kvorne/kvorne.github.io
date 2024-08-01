@@ -5,8 +5,8 @@ h1  {
     font-weight: 350;
     color: var(--Primary);
     line-height: 130%;
-    margin: 3rem 0rem 2rem 0rem;
-    width: 80%;
+    margin: 4rem 0rem 2rem 0rem;
+    width: 75%;
     font-family: "Lexend";
 }
 .flex-row h1{

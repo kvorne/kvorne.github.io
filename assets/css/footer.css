@@ -8,7 +8,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    border-top: 1px solid var(--Shadow)!important;
+    /* border-top: 1px solid var(--Shadow)!important; */
 }
 .Footer h3, .Footer p, .Footer p a{
     color: var(--Body);
@@ -20,7 +20,7 @@
     margin-bottom: 0;
 }
 
-.Footer .forty {
+.Footer .thirty {
     align-items: end;
     text-align: right;
 }
@@ -50,7 +50,7 @@
         padding: var(--Gutter) 0px;
         display: flex;
         flex-direction:column-reverse !important;
-        gap: .5rem;
+        gap: 1.5rem;
       }
     .Footer p{
         text-align: left;

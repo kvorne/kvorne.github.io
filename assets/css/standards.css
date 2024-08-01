@@ -1,6 +1,6 @@
 @font-face{
     font-family: Lexend; 
-    src: url('../lexend/Lexend-VariableFont_wght.ttf')
+    src: url('../outfit/Outfit-VariableFont_wght.ttf')
 }
 html {
     /* Colors */
@@ -14,10 +14,10 @@ html {
     /* --Heading-Family: "freight-sans-pro", sans-serif;
     --Body-Family: "proxima-nova", "Roboto", Arial, sans-serif; */
     font-family: "Lexend", Arial, sans-serif;
-    font-size: 20px;
+    font-size: 21px;
 
     /* Margins and Padding */
-    --Outer-Padding: 5.5rem;
+    --Outer-Padding: 5rem;
     --Gutter: 2rem;
     
     /* Breakpoints */
@@ -47,14 +47,14 @@ body {
 
 @media  (min-width: 0px) and (max-width: 600px){
     html{
-        font-size: 16px;
+        font-size: 17px;
         --Outer-Padding: 1.6rem;
         --Gutter: 1rem;
     }
 }
 @media  (min-width: 601px) and (max-width: 1100px){
     html{
-        font-size: 18px;
+        font-size: 19px;
         --Outer-Padding: 3.75rem;
         --Gutter: 1rem;
     }
