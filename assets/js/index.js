@@ -19,7 +19,7 @@ function init() {
 
     var $headingInner = $(".line-inner");
 
-    splitTextTimeline.staggerTo($headingInner, 0.7, { y:0,  force3D:true, ease: "customEase"}, 0.1);
+    splitTextTimeline.staggerTo($headingInner, 1, { y:0,  force3D:true, ease: "customEase"}, 0.2);
     // split.revert();
     splitTextTimeline.play();
 }
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         updateHeadingContent();
     }));
 
-    const customFont = new FontFaceObserver('Lexend');
+    const customFont = new FontFaceObserver('Outfit');
     customFont.load().then(() => {
         init();
     });

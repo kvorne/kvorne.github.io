@@ -94,6 +94,7 @@ header .section{
     display: flex;
     flex-direction:row;
     gap: var(--Outer-Padding);
+    justify-content: space-between;
   }
 .seventy{
     width: 70%;
