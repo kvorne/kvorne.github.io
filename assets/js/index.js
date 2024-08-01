@@ -35,7 +35,7 @@ function debounce(func){
 document.addEventListener("DOMContentLoaded", function(event) {
     const $heading = document.querySelector("h1");
     const largeScreenContent = "<span>I’m Katarina, a UX Designer </span><br/>Crafting intentional experiences informed by user research, empathy, and a technical background";
-    const smallScreenContent = "I’m Katarina, a UX Designer Crafting intentional experiences informed by user research, empathy, and a technical background";
+    const smallScreenContent = "I’m Katarina, a UX Designer crafting intentional experiences informed by user research, empathy, and a technical background";
 
     function updateHeadingContent() {
         if (window.innerWidth > 768) {

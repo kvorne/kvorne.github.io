@@ -1,5 +1,5 @@
 @font-face{
-    font-family: Lexend; 
+    font-family: Outfit; 
     src: url('../outfit/Outfit-VariableFont_wght.ttf')
 }
 html {
@@ -13,7 +13,7 @@ html {
     /* Font */
     /* --Heading-Family: "freight-sans-pro", sans-serif;
     --Body-Family: "proxima-nova", "Roboto", Arial, sans-serif; */
-    font-family: "Lexend", Arial, sans-serif;
+    font-family: "Outfit", Arial, sans-serif;
     font-size: 21px;
 
     /* Margins and Padding */
