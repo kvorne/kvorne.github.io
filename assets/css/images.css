@@ -68,6 +68,10 @@ figure img{
     width:100%;
 }
 
+.flex-row img{
+    margin: 0px;
+}
+
 figure {
     margin: 2rem var(--Gutter);
     display: table;
