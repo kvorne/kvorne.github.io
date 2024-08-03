@@ -25,9 +25,31 @@ button{
 }
 button:hover{
     filter: brightness(1.2);
-    box-shadow:
-        0 3px 8px var(--Shadow);
+    /* box-shadow:
+        0 3px 8px var(--Shadow); */
     cursor: pointer;
+}
+
+.hover-arrow svg{
+    visibility: hidden;
+    position: absolute;
+    transition: all 300ms;
+    top: 29%;
+    opacity: 0;
+    padding-left: 8px;
+}
+.hover-arrow:hover svg{
+    visibility:visible;
+    transition: all 300ms;
+    opacity: 1;
+}
+.hover-arrow {
+    position: relative;
+    transition: 300ms;
+  }
+.hover-arrow:hover {
+    padding-right: calc(1.2rem + 30px);
+    transition: 300ms;
 }
 
 
@@ -244,3 +266,4 @@ text-decoration: none;
         margin-left: 0px;
     }
 }
+
