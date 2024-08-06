@@ -30,7 +30,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5rem 0px 5rem 0px;
+    padding: 6rem 0px 6rem 0px;
     transform-style: preserve-3d;
     z-index: -1;
 }

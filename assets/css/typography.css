@@ -5,9 +5,11 @@ h1  {
     font-weight: 350;
     color: var(--Primary);
     line-height: 130%;
-    margin: 4rem 0rem 2rem 0rem;
-    width: 75%;
+    margin: 4rem 0rem 1rem 0rem;
     font-family: "Outfit";
+}
+.reducedWidth{
+    width: 75%;
 }
 .flex-row h1{
     width:100%;
@@ -231,8 +233,10 @@ ol li span{
 @media  (min-width: 0px) and (max-width: 1100px){
     h1{
         font-size: 2rem;
-        width: 100%;
         margin: 2rem 0rem 2rem 0rem;
+    }
+    .reducedWidth{
+        width: 100%;
     }
     h1 span{
         line-height: 120%;
