@@ -1,0 +1,36 @@
+.tab-toggle{
+	transform: translateZ(0);
+    background: var(--Accent);
+    padding: 24px 32px 0px 32px;
+}
+
+.tab-toggle{
+	position: absolute;
+	opacity: 0;
+	display: none;
+}
+
+.tab-toggle > label{
+	position: relative;
+	display: block;
+	padding-bottom: 16px;
+	line-height: 150%;
+	font-size: 1rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.tab-toggle > section{
+	max-height: 0;
+	transition: .3s all;
+	overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-toggle > .tab-toggle-toggle:checked ~ label svg{
+ transform: rotate(180deg);
+}
+
+.tab-toggle > .tab-toggle-toggle:checked ~ section{
+  max-height: 200px;
+}

@@ -1,0 +1,55 @@
+/* Adapted from https://codepen.io/NeZaMy/pen/ZWNePP */
+.accordion:first-of-type{
+    border-radius: 32px 32px 0px 0px;
+}
+.accordion:last-of-type{
+    border-radius: 0px 0px 32px 32px;
+    padding-bottom: 24px;
+}
+.accordion:last-of-type > section{
+    border-bottom: 0px !important;
+}
+.accordion{
+	transform: translateZ(0);
+    background: var(--Accent);
+    padding: 24px 32px 0px 32px;
+}
+
+.accordion > .accordion-toggle{
+	position: absolute;
+	opacity: 0;
+	display: none;
+}
+
+.accordion > label{
+	position: relative;
+	display: block;
+	padding-bottom: 16px;
+	line-height: 150%;
+	font-size: 1rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.accordion > label svg {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    transform: rotate(0deg);
+    transition: .3s transform;
+  }
+
+.accordion > section{
+	max-height: 0;
+	transition: .3s all;
+	overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion > .accordion-toggle:checked ~ label svg{
+ transform: rotate(180deg);
+}
+
+.accordion > .accordion-toggle:checked ~ section{
+  max-height: 200px;
+}
