@@ -1,7 +1,10 @@
-.tab-toggle{
-	transform: translateZ(0);
-    background: var(--Accent);
-    padding: 24px 32px 0px 32px;
+.tabs{
+	display: flex;
+}
+.tab{
+	display: block;
+	width: fit-content;
+	margin-bottom: 1rem;
 }
 
 .tab-toggle{
@@ -10,27 +13,41 @@
 	display: none;
 }
 
-.tab-toggle > label{
+.tab > label{
 	position: relative;
 	display: block;
 	padding-bottom: 16px;
 	line-height: 150%;
 	font-size: 1rem;
-	font-weight: 600;
+	font-weight: 350;
 	cursor: pointer;
+	padding: .3rem 1rem;
+	border-radius: 1rem;
+	color: var(--Shadow);
+	transition: all .3s ease-in-out;
 }
-
 .tab-toggle > section{
 	max-height: 0;
 	transition: .3s all;
 	overflow: hidden;
-    border-bottom: 1px solid #ddd;
+	
 }
 
-.tab-toggle > .tab-toggle-toggle:checked ~ label svg{
- transform: rotate(180deg);
+.tab > .tab-toggle:checked ~ label {
+	color: var(--Body);
+	background-color: var(--Accent);
 }
 
-.tab-toggle > .tab-toggle-toggle:checked ~ section{
-  max-height: 200px;
+.tab > .tab-toggle:hover ~ label {
+	color: var(--Body);
+	transition: all .3s ease-in-out;
+}
+
+@media  (min-width: 0px) and (max-width: 768px){
+	.tabs{
+		display: block;
+	}
+	.tab > label{
+		margin-bottom:.5rem;
+	}
 }

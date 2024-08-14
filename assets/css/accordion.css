@@ -43,7 +43,7 @@
 	max-height: 0;
 	transition: .3s all;
 	overflow: hidden;
-    border-bottom: 1px solid #ddd;
+    border-bottom: .5px solid var(--Shadow);
 }
 
 .accordion > .accordion-toggle:checked ~ label svg{
@@ -52,4 +52,15 @@
 
 .accordion > .accordion-toggle:checked ~ section{
   max-height: 200px;
+}
+
+#Design-Section{
+    display: none;
+}
+
+#Design:checked ~ #Design-Section{
+    display:block;
+}
+#Design-Section{
+    display: none;
 }
