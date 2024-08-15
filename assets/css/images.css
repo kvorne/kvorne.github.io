@@ -94,3 +94,7 @@ header path {
 svg{
     height:1rem;
 }
+
+header svg{
+    margin-top: 1rem;
+}
